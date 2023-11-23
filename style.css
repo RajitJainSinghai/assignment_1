@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url("./font/Roboto-Regular.ttf") format("truetype");
+   }
+   * {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    position: relative;
+    height: 1200px;
+}  
+  .upper_surface {
+    width: 100%;
+}
+.login_form {
+    width: 800px;
+    border: 1px solid;
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+}
+.form_img_block {
+    width: 50%;
+    position: relative;
+}
+.form_img_block img {
+    width: 100%;
+    display: block;
+
+}
+.form_inside_heading {
+    position: absolute;
+    top: 80px;
+    color: white;
+    width: 300px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.form_inside_heading h2 {
+    font-size: 34px;
+    height: 45px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.form_inside_heading p {
+    font-size: 17px;
+    height: 120px;
+    font-weight: 400;
+    line-height: 20px;
+}
+ /* for triangle at left bottom */
+ .triangle_at_bottom {
+    border-left: 100px solid white;
+    border-bottom: 100px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    transform: rotate(270deg);
+}
+
