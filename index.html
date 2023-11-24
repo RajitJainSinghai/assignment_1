@@ -12,7 +12,8 @@
 
         <div class="login_form">
             <div class="form_img_block">
-                <img src="./images/form.webp" alt="">
+                <img class="desktop" src="./images/form.webp" alt="">
+                <img class="mobile" src="./images/form_mobile.webp" alt="">
                 <div class="form_inside_heading">
                     <h2>Sample heading</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum distinctio incidunt quae voluptas tempore dolorem, autem officia libero soluta.</p>
@@ -22,6 +23,7 @@
             </div>
 
             <div class="form_detailed_block">
+                <div class="triangle_at_top"></div>
                 <form class="form">
                     <h2>Create an account</h2>
                     <div class="email_block">
@@ -29,12 +31,12 @@
                         <input class="email_input" type="text" id="email" name="email" value="">
                     </div>
 
-                    <div class="date_of_birth_block">
+                <div class="date_of_birth_block">
                         <label class="dob_label" for="email">Date of birth <span>(Optional)</span> </label><br>
-                        <div class="Optional">
+                    <div class="Optional">
                         <div class="date_of_birth">
                             <label class="date" for="date">Date</label><br>
-                            <select name="" id="">
+                            <select class="date_selector" name="" id="">
                                 <option value="01">01</option>
                                 <option value="02">02</option>
                                 <option value="03">03</option>
@@ -50,7 +52,7 @@
 
                         <div class="date_of_birth">
                             <label class="month" for="month">Month</label><br>
-                            <select name="" id="">
+                            <select class="month_selector" name="" id="">
                                 <option value="Jan">January</option>
                                 <option value="Feb">Febuary</option>
                                 <option value="Mar">March</option>
@@ -66,11 +68,9 @@
                             </select>
                         </div>
 
-                    </div>
-
                         <div class="date_of_birth">
                             <label class="year" for="year">Year</label><br>
-                            <select name="" id="">
+                            <select class="year_selector" name="" id="">
                                 <option value="01">1995</option>
                                 <option value="02">1996</option>
                                 <option value="03">1997</option>
@@ -83,15 +83,41 @@
                                 <option value="10">2003</option>
                             </select>
                         </div>
-                    </div>
 
+                </div>
+                </div>
+
+                <div class="password_block">
+                    <label class="password_label" for="password">Choose a strong password</label><br>
+                    <input class="password_input" type="password" id="password" name="password" value="">
+                </div>
+
+
+                <div class="radio_block">
+                    <label class="radio_label" for="radio">Are you an agency or individual?</label><br>
+                    <div class="for_radio">
+                    <span class="individual">
+                        <input type="radio" id="individual" name="radio" value="Individual" checked>
+                        <label class="individual" for="html">Individual</label><br>
+                    </span>
+                    <span class="agency">
+                        <input type="radio" id="agency" name="radio" value="Agency">
+                        <label class="agency" for="html">Agency</label><br>
+                    </span>
+                </div>
+                </div>
+
+                <button class="submit">Submit</button>
                     </form>
+        <img class="down_surface_mobile" src="./images/down_surface.webp" alt="">
+
                 </div>
 
             </div>
 
 
         </div>
+
     </div>
 
   
