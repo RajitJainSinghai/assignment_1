@@ -12,7 +12,7 @@
   .container {
     width: 100%;
     position: relative;
-    height: 1200px;
+    height: auto;
 }  
   .upper_surface {
     width: 100%;
@@ -88,12 +88,12 @@
     right: -8px;
 
 }
-.form {
+#form {
     width: 80%;
     margin: 50px auto;
     padding: 5px;
 }
-.form h2 {
+#form h2 {
     font-size: 24px;
     height: 28px;
     font-weight: 700;
@@ -107,7 +107,7 @@
     font-size: 16px;
     font-weight: 700;
 }
-#email, .password_input {
+.email_input, .password_input {
     width: 100%;
     height: 42px;
     border: 2px solid #BDBDBD;
@@ -182,6 +182,45 @@ span.individual, .agency {
 .date_of_birth {
     width: auto;
 }
+
+
+
+/* latest */
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/* latest end */
 @media screen and (max-width: 785px) {
     .date_of_birth {
         width: 33%;

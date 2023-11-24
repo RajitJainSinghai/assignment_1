@@ -23,104 +23,112 @@
             </div>
 
             <div class="form_detailed_block">
-                <div class="triangle_at_top"></div>
-                <form class="form">
-                    <h2>Create an account</h2>
-                    <div class="email_block">
-                        <label class="email_label" for="email">Enter your email</label><br>
-                        <input class="email_input" type="text" id="email" name="email" value="">
-                    </div>
+                    <div class="triangle_at_top"></div>
+                    <form id="form" action="/">
+                            <h2>Create an account</h2>
+                            <!-- <div class="email_block">
+                                <label class="email_label" for="email">Enter your email</label><br>
+                                <input class="email_input" type="text" id="email" name="email">
+                                <div class="error"></div>
+                            </div> -->
 
-                <div class="date_of_birth_block">
-                        <label class="dob_label" for="email">Date of birth <span>(Optional)</span> </label><br>
-                    <div class="Optional">
-                        <div class="date_of_birth">
-                            <label class="date" for="date">Date</label><br>
-                            <select class="date_selector" name="" id="">
-                                <option value="01">01</option>
-                                <option value="02">02</option>
-                                <option value="03">03</option>
-                                <option value="04">04</option>
-                                <option value="05">05</option>
-                                <option value="06">06</option>
-                                <option value="07">07</option>
-                                <option value="08">08</option>
-                                <option value="09">09</option>
-                                <option value="10">10</option>
-                            </select>
+                            <div class="input-control">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text">
+                                <div class="error"></div>
+                            </div>
+
+                        <div class="date_of_birth_block">
+                                <label class="dob_label" for="email">Date of birth <span>(Optional)</span> </label><br>
+                            <div class="Optional">
+                                <div class="date_of_birth">
+                                    <label class="date" for="date">Date</label><br>
+                                    <select class="date_selector" name="" id="">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                                <div class="date_of_birth">
+                                    <label class="month" for="month">Month</label><br>
+                                    <select class="month_selector" name="" id="">
+                                        <option value="Jan">January</option>
+                                        <option value="Feb">Febuary</option>
+                                        <option value="Mar">March</option>
+                                        <option value="Apr">April</option>
+                                        <option value="May">May</option>
+                                        <option value="Jun">June</option>
+                                        <option value="Jul">July</option>
+                                        <option value="Aug">August</option>
+                                        <option value="Sept">September</option>
+                                        <option value="Oct">October</option>
+                                        <option value="Nov">November</option>
+                                        <option value="Dec">December</option>
+                                    </select>
+                                </div>
+
+                                <div class="date_of_birth">
+                                    <label class="year" for="year">Year</label><br>
+                                    <select class="year_selector" name="" id="">
+                                        <option value="01">1995</option>
+                                        <option value="02">1996</option>
+                                        <option value="03">1997</option>
+                                        <option value="04">1998</option>
+                                        <option value="05">1998</option>
+                                        <option value="06">1999</option>
+                                        <option value="07">2000</option>
+                                        <option value="08">2001</option>
+                                        <option value="09">2002</option>
+                                        <option value="10">2003</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="input-control">
+                            <label for="password">Password</label>
+                            <input id="password"name="password" type="password">
+                            <div class="error"></div>
                         </div>
 
-                        <div class="date_of_birth">
-                            <label class="month" for="month">Month</label><br>
-                            <select class="month_selector" name="" id="">
-                                <option value="Jan">January</option>
-                                <option value="Feb">Febuary</option>
-                                <option value="Mar">March</option>
-                                <option value="Apr">April</option>
-                                <option value="May">May</option>
-                                <option value="Jun">June</option>
-                                <option value="Jul">July</option>
-                                <option value="Aug">August</option>
-                                <option value="Sept">September</option>
-                                <option value="Oct">October</option>
-                                <option value="Nov">November</option>
-                                <option value="Dec">December</option>
-                            </select>
+
+                        <div class="radio_block">
+                            <label class="radio_label" for="radio">Are you an agency or individual?</label><br>
+                            <div class="for_radio">
+                            <span class="individual">
+                                <input type="radio" id="individual" name="radio" value="Individual" checked>
+                                <label class="individual" for="html">Individual</label><br>
+                            </span>
+                            <span class="agency">
+                                <input type="radio" id="agency" name="radio" value="Agency">
+                                <label class="agency" for="html">Agency</label><br>
+                            </span>
+                            </div>
                         </div>
 
-                        <div class="date_of_birth">
-                            <label class="year" for="year">Year</label><br>
-                            <select class="year_selector" name="" id="">
-                                <option value="01">1995</option>
-                                <option value="02">1996</option>
-                                <option value="03">1997</option>
-                                <option value="04">1998</option>
-                                <option value="05">1998</option>
-                                <option value="06">1999</option>
-                                <option value="07">2000</option>
-                                <option value="08">2001</option>
-                                <option value="09">2002</option>
-                                <option value="10">2003</option>
-                            </select>
-                        </div>
-
-                </div>
-                </div>
-
-                <div class="password_block">
-                    <label class="password_label" for="password">Choose a strong password</label><br>
-                    <input class="password_input" type="password" id="password" name="password" value="">
-                </div>
-
-
-                <div class="radio_block">
-                    <label class="radio_label" for="radio">Are you an agency or individual?</label><br>
-                    <div class="for_radio">
-                    <span class="individual">
-                        <input type="radio" id="individual" name="radio" value="Individual" checked>
-                        <label class="individual" for="html">Individual</label><br>
-                    </span>
-                    <span class="agency">
-                        <input type="radio" id="agency" name="radio" value="Agency">
-                        <label class="agency" for="html">Agency</label><br>
-                    </span>
-                </div>
-                </div>
-
-                <button class="submit">Submit</button>
+                        <button type="submit" class="submit">Submit</button>
                     </form>
-        <img class="down_surface_mobile" src="./images/down_surface.webp" alt="">
+                        <img class="down_surface_mobile" src="./images/down_surface.webp" alt="">
 
                 </div>
 
-            </div>
+    </div>
 
 
         </div>
 
-    </div>
+    
 
   
-<script src="./script.js"></script>    
 </body>
 </html>
+<script src="./script.js"></script>    
