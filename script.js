@@ -11,8 +11,10 @@ form.addEventListener('submit', e => {
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
+    document.getElementById("paddingemail").style.padding = "0 10px";
+    document.getElementById("paddingpass").style.padding = "0 10px";
 
-    errorDisplay.innerText = message;
+    errorDisplay.innerText =  message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success')
 }
@@ -24,6 +26,7 @@ const setSuccess = element => {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
+    
 };
 
 const isValidEmail = email => {
@@ -39,7 +42,7 @@ const validateInputs = () => {
     if(emailValue === '') {
         setError(email, 'Email is required');
     } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Provide a valid email address');
+        setError(email, ' Please add valid email address');
     } else {
         setSuccess(email);
     }
@@ -47,7 +50,7 @@ const validateInputs = () => {
     if(passwordValue === '') {
         setError(password, 'Password is required');
     } else if (passwordValue.length < 8 ) {
-        setError(password, 'Password must be at least 8 character.')
+        setError(password, ' Password must have a numeric value ')
     } else {
         setSuccess(password);
     }

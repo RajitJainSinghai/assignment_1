@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Roboto';
-    src: url("./font/Roboto-Regular.ttf") format("truetype");
+    src: url("font/Roboto-Regular.ttf") format("truetype");
    }
    * {
     box-sizing: border-box;
@@ -12,7 +12,7 @@
   .container {
     width: 100%;
     position: relative;
-    height: auto;
+    height: 700px;
 }  
   .upper_surface {
     width: 100%;
@@ -35,6 +35,11 @@
 .desktop {
     width: 100%;
     display: block;
+    background-image: url(./images/form.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 .mobile {
     width: 100%;
@@ -97,9 +102,41 @@
     font-size: 24px;
     height: 28px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-.email_block, .date_of_birth_block, .password_block, .radio_block {
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+.input-control.success .error {
+    padding: 0 !important;
+}
+
+
+.input-control.error input {
+    border-color: #EB5757;
+}
+
+.input-control .error {
+    color: white;
+    background-color: #EB5757 !important;
+    font-size: 13px;
+    width: fit-content;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+ .date_of_birth_block, .radio_block {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -124,7 +161,7 @@ font-size: 12px;
     display: flex;
     width: 100%;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 5px;
     justify-content: space-between;
 }
 .date, .month, .year {
@@ -153,7 +190,7 @@ font-size: 12px;
     margin-top: 6px;
 
 }
-span.individual, .agency {
+.individual, .agency {
     margin-right: 50px;
     margin-top: 2px;
     width: 50%;
@@ -183,46 +220,8 @@ span.individual, .agency {
     width: auto;
 }
 
-
-
-/* latest */
-
-
-.input-control {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-control input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-	width: 100%;
-}
-
-.input-control input:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
-}
-
-/* latest end */
 @media screen and (max-width: 785px) {
-    .date_of_birth {
+.date_of_birth {
         width: 33%;
     }
     .date_selector, .month_selector, .year_selector  {
@@ -259,11 +258,10 @@ span.individual, .agency {
         font-weight: 400;
         margin-top: 0px;
     }
-
 }
 @media screen and (max-width: 400px) {
     .date_selector {
-        width: 90px;
+        width: 75px;
     }
     .month_selector, .year_selector  {
         width: 90px;
@@ -287,6 +285,4 @@ span.individual, .agency {
         width: 70%;
         top: 18%;
     }
-    
-    
 }
